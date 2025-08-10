@@ -8,7 +8,7 @@ const currency = "usd";
 const deliveryCharge = 5;
 const frontend_URL = 'http://localhost:5173';
 
-// Placing User Order for Frontend using stripe
+// placing user order for frontend using stripe
 const placeOrder = async (req, res) => {
 
     console.log("Order Request:", req.body);
@@ -62,7 +62,7 @@ const placeOrder = async (req, res) => {
 
 }
 
-// Placing User Order for Frontend using stripe
+// placing user order for frontend using stripe
 const placeOrderCod = async (req, res) => {
 
     try {
@@ -84,7 +84,7 @@ const placeOrderCod = async (req, res) => {
     }
 }
 
-// Listing Order for Admin panel
+// listing order for admin panel
 const listOrders = async (req, res) => {
     try {
         const orders = await orderModel.find({});
@@ -95,7 +95,7 @@ const listOrders = async (req, res) => {
     }
 }
 
-// User Orders for Frontend
+// user orders for frontend
 const userOrders = async (req, res) => {
     try {
         const orders = await orderModel.find({ userId: req.body.userId });
