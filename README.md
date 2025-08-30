@@ -8,7 +8,7 @@ https://youtu.be/jpu1ndWH7XQ
 
 ## Features
 
-- User registrationa and authentication (register / login / logout)
+- User registration and authentication (register / login / logout)
 - Product catalog with category-based filtering and search
 - Dynamic cart & checkout, order tracking with statuses
 - Secure payments via Stripe
